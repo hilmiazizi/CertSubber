@@ -64,7 +64,7 @@ def Extractor(result):
 			
 def CheckUp(url):
 	try:
-		r = requests.head('https://'+url, timeout=5)
+		r = requests.head('https://'+url, timeout=2)
 		return str(r.status_code)
 	except:
 		return False
